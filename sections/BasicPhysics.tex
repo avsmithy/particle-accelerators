@@ -1,0 +1,89 @@
+ \subsection{Introduction}
+ 
+ Particle colliders are particle accelerators which collide two beams charged particles (e.g. quarks, leptons and bosons) or ionic nuclei into each other or a static target. This is achieved by accelerating the particles with electromagnetic fields to kinetic energies in the regions of giga and tera electron volts (velocities in excess of 0.999c). Well known examples are the Large Hadron Collider (LHC) at CERN and the Tevatron at Fermilab.
+ 
+ \subsection{Collision Physics}
+ 
+ \subsubsection{Lepton vs. Hadron Collisions}
+ 
+ Leptons are elementary particles, whereas hadrons are composed of quarks bound via the strong force. Collisions involving hadrons are actually interactions of the constituent quarks and are modelled as such \cite{?}. Evidently the resulting interactions of hadron-hadron will be completely different from lepton-lepton; lepton collisions tend to be considerably cleaner and simpler to analyse \cite{?}.
+ 
+ \subsection{Terms}
+ 
+ \subsubsection{Linear and Circular Colliders}
+ 
+ Colliders can be broken down into two distinct categories, Linear Accelerators (linac) and Circular (ring) Accelerators.
+ A linac collides two bunches of particles at a fixed point in the center of a linac. After the intersubsection, the remaining particles can no longer be used since they are travelling in the wrong direction. A ring collider can have multiple collision points along the track (the LHC has four detectors) and after a collision, the uncollided particles continue on to be used again.  
+ 
+ \subsubsection{Beam Energy}
+ 
+ Collisions are at relativistic speeds so the energy is measured in the center of mass frame.
+ 
+ For a fixed target, the collision energy is proportional to the root of E, whereas two beam energy is proportional to 2E and is therefore more efficient \cite{ITP_Energy}.
+ 
+ [Why is higher beam energy better?]
+ 
+ \subsubsection{Luminosity}
+ 
+ Luminosity is a representation of the number of events per unit time and is a measure of the colliders performance. 
+ 
+ $$
+ Luminosity = \frac{n N_1 N_2 f}{A}
+ $$
+ 
+ n = number of colliding bunches. $N_{1,2}$ = num of particles in each bunch. f = frequency of collisions. A = cross subsectional area of the beam.
+ 
+ [Maximising the luminosity is important to...]
+ 
+ [Compare some luminosity.]
+ 
+ \subsubsection{Synchrotron Radiation}
+ 
+ When charged particles move along a curved path, they emit synchrotron radiation [why/how?]. This detracts from the kinetic energy of the particle and so can impose limits on circular colliders. 
+ The amount of energy emitted is inversely proportional to the square of the path radius and proportional to the fourth power of the velocity.  
+ Since heavier particles travel slower compared lighter particles with the same kinetic energy, this is a limiting factor for circular colliders of light particles. Accelerating an electron to the same energies as a proton in the LHC would require several orders of magnitude more energy [how much?], hence linacs, which do not lose any energy via synchrotron radiation, are often used for light particle collisions.
+ 
+ Synchrotron radiation is used in research as it is the brightest source of artificial X-Rays.
+ 
+ \subsubsection{Acceleration Gradient}
+ 
+ The acceleration gradient is measure of energy imparted on a particle beam per unit length. For a linac, the particle beam only makes one pass and so the acceleration gradient must be very large to reach the required energies. In comparison, ring colliders can accelerate the particles gradually since they may travel around millions of time before collision. This also allows ring colliders to reach energies an order of magnitude higher than linacs before synchrotron losses become prohibitive.
+ 
+ \subsection{Systems}
+ \subsubsection{Radiofrequency Cavities}
+ 
+ RF cavities are used to accelerate the particle beam and are typically spaced along the length of collider \cite{CERN_RFCav}. Electromagnetic waves 
+are contained within the cavity and the resulting EM field transfers energy to passing charged particles. The cavities oscillate at a fixed frequency. A particle arriving at exactly the right time will not be subjected to any force, yet ones ahead or behind will be relatively pulled or pushed to match the ideal velocity. This causes particles to bunch into precise groups. On each pass the bunch will increase in energy.
+
+Klystrons produce EM waves which are fed remotely along a metal waveguide to  the RF cavities. An electron beam is bunched via the same method as a RF cavity and then meets an EM wave at a time where the wave opposes the electron's motion, causing the electrons to slow down and transfer energy to the wave. Klystrons operate with a relatively low current, but voltage in the kilovolt region.
+ 
+ \subsubsection{Beam Control}
+ 
+ Aside from the bunching performed by RF cavities, the particle beam needs to be narrowed in the other two planes and, in a ring collider, bent along the path. A quadrupole arrangement of magnets has two north and two south poles at 90 degrees from each other in a circle pattern and is used for focusing the beam like a lens. The field produced has a minimal potential at the center of the beam, forcing stay particles towards the bunch \cite{Quadrupole}. Dipole magnets are used to bend particles around the path of a ring collider [expand].
+ 
+ 
+ \subsubsection{Cooling}
+ 
+ Superconductors have an electrical resistance of almost zero. This allows the bending electromagnets to produce extremely strong fields and therefore bend a higher energy particle beam.
+ 
+ Superconducting RF cavities can operate at a higher duty cycle, lower beam impedance (as the apertures can be made wider) and higher efficiency of the RF source (Klystron costs increase exponentially with output). 
+ 
+ The financial savings made from the reduced power requirements during operation is approximately offset by the need to supercool the equipment \cite{?}.
+ 
+ \subsubsection{Storage Rings and Injectors}
+ 
+Many colliders use a mixture of linacs and rings in a chain to gradually raise the particle energy before the beam reaches the collider. These are referred to as booster or injectors. For example, a ring accelerator can be used to increase the energy of leptons with a low acceleration gradient (before synchrotron losses are a consideration) and then send the bunched particles into a linac for higher energy collisions.
+
+Storage rings hold particles at time dilating speeds, this can be useful to store, filter and bunch slow to produce and/or rapidly decaying particles (e.g. antimatter).
+
+ \subsubsection{Detectors}
+  
+ Detectors are present at the collision point of the particles to observe their momentum, energy and mass. Typically there are several different detectors, each observing a different property. 
+ 
+ Closest to the collision are the tracking devices, which observe the path of the particles by their interference with matter, similar to a cloud chamber. Weakly interacting particles are harder to observe. Momentum can be deduced from the deflection of the particle in a magnetic field. 
+ 
+ Calorimeters then detect energy as particles are forced to deposit their energy into materials. Different materials are stacked in layers for strong and electromagnetic force interactions. 
+ 
+ Velocity of particles, which combined with momentum can determine mass, [TBC - Cherenkov radiation - http://home.web.cern.ch/about/how-detector-works].
+ 
+ Muon detectors are the furthest out, since they need to be large to detect weakly interacting particles.
