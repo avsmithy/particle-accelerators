@@ -3,8 +3,11 @@
 \usepackage{hyperref}
 \usepackage{amsmath}
 \usepackage{graphicx}
-\usepackage[backend=bibtex,firstinits=true]{biblatex}
-\bibliography{References}
+\usepackage{fullpage}
+
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{References.bib}
+
 \graphicspath{ {img/} }
 
 \begin{document}
@@ -46,10 +49,6 @@
  	
  \end{section}
  
- \begin{section}{Allocation of Work}
- 
- \end{section}
- 
  \begin{section}{Introduction}
  
  \end{section}
@@ -59,11 +58,28 @@
  \end{section}
  
  \begin{section}{Review of Proposed Colliders}
- 
+     \begin{subsection}{ILC}
+     
+     \end{subsection}
+     \begin{subsection}{CLIC}
+     
+     \end{subsection}
+     \begin{subsection}{TLEP}
+     
+     \end{subsection}
+     \begin{subsection}{LHeC}
+     
+     \end{subsection}
+     \begin{subsection}{Muon-Muon}
+     
+     \end{subsection}
+     \begin{subsection}{SAPPHIRE}
+     
+     \end{subsection}
  \end{section}
  
- \begin{section}{Project Plan}
- 
+ \begin{section}{Comparison of ILC and CLIC}
+     \input{sections/Comparison.tex}
  \end{section}
  
  \begin{section}{Conclusion}
@@ -71,7 +87,6 @@
  \end{section}
  
  \clearpage
- \bibliographystyle{unsrt}
- \bibliography{References}
+ \printbibliography
  
 \end{document}

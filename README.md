@@ -1,3 +1,5 @@
+You can download the latest version of the report above (Report.pdf).
+
 LaTex and Github
 ========
 
