@@ -32,3 +32,5 @@
 *.tdo
 
 /Report.pdf
+
+.DS_Store
