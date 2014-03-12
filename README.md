@@ -1,5 +1,3 @@
-You can download the latest version of the report above (Report.pdf).
-
 LaTex and Github
 ========
 
@@ -17,6 +15,16 @@ Make changes to the latex code in your local repository. Then commit your change
 
 Latex
 -----
-TBC
 
 I use Texpad - https://www.texpadapp.com/osx
+
+To compile bibliography (if you see [REF:XYZ] instead of a number at reference points), first compile Report.tex, then References.bib (with Bibtex) and then Report.tex again. 
+
+Bibliography
+------------
+
+Get BibDesk - http://bibdesk.sourceforge.net/
+
+Follow the last paragraph here to use biblatex (rather than bibtex) - http://sourceforge.net/apps/mediawiki/bibdesk/index.php?title=Tips_and_Tricks#BibLateX_Types_and_Fields
+
+Point BibDesk at References.bib and go to work.
