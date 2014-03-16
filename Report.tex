@@ -10,12 +10,12 @@
 
 \usepackage{graphicx}
 
-\usepackage{fullpage}
-
 \usepackage{fancyhdr}
 \usepackage{caption}
 \usepackage{hhline}
-
+\usepackage{chngpage}
+\usepackage{adjustbox}
+\usepackage{tabularx}
 \usepackage{setspace}
 \usepackage{textgreek}
 
@@ -24,7 +24,13 @@
 
 \graphicspath{ {img/} }
 
-\begin{document} % todo fix spaces before TeV and bn/billion
+\begin{document} 
+% todo no spaces before units and bn/billion?
+% todo quote
+% todo use endash no preceding space
+% todo equations, refer by label not text
+% todo figures !htb? dont cut text
+% todo work allocations
 
     \begin{titlepage}
     
@@ -43,6 +49,7 @@
      \title{The Next High Energy Particle Collider}
      
      \maketitle
+     \thispagestyle{empty}
      
      \center{
      PHAS3441 - Group 9
@@ -134,7 +141,7 @@
  \end{section}
  
  \clearpage
- \hfuzz = 1000pt % todo refernce 15 still over page
+ \hfuzz = 1000pt % todo reference 15 still over page
  \printbibliography
  
 \end{document}
