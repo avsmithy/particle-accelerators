@@ -34,16 +34,21 @@ The long bunch length prior to compression and large energy spread of the beam a
 \subsubsection{CLIC Feasibility}
 
 Compared to the ILC, the Compact Linear Collider (CLIC) is facing more technical feasibility challenges as it boasts a much higher energy reach of 3 TeV and a luminosity of $2 \times 10^{34} cm^{-2} s^{-1}$, beyond the reach of standard superconducting technology proposed for the ILC. Hence, new previously-untested technology is being proposed for CLIC in order to achieve the proposed technical goals \cite{CLIC:ArticleSymmetry}. In this section, a critical assessment of the technical feasibility of CLIC is carried out.
-The two main technologies currently proposed for CLIC that pose the greatest feasibility challenge are the 100MV/m linac gradient in the accelerating structure, and the two-beam acceleration scheme used to generate and extract power from the drive beam of electrons and positrons. The challenge of producing an ultra-low emittance beam is also addressed \cite{CLIC:Concept}.
-\paragraph{Accelerating Gradient}
-The energy E of the colliding beams is given by equation \ref{eq:CollidingBeamsE} \cite{CLIC:Concept}:
+
+The two main technologies currently proposed for CLIC that pose the greatest feasibility challenge are the 100MV/m linac gradient in the accelerating structure, and the two-beam acceleration scheme used to generate and extract power from the drive beam of electrons and positrons. The challenge of producing an ultra-low emittance beam is also addressed \cite{CLIC:Concept}.
+
+\paragraph{Accelerating Gradient}
+
+The energy E of the colliding beams is given by equation \ref{eq:CollidingBeamsE} \cite{CLIC:Concept}:
 
 \begin{equation}
     E = E_{acc} L F
     \label{eq:CollidingBeamsE}
 \end{equation}
-where $E_{acc}$ is the average loaded gradient of the accelerating structures, L is the length of each linac and F is the ``fill factor'', which characterises the fraction of the linac occupied by accelerating structures. It is the general case for colliders such as the ILC and CLIC that in order to reduce overall construction cost, reducing L is of key importance here, without compromising the energy reach E of the collider. Minimising the value of L also allows for a compact collider that eases the siting of the accelerator complex. Hence, in order to maximise E, high fill factors and high gradients are required.
-The proposed value of 100MV/m for the accelerating gradient was chosen as the optimal value while finding a suitable compromise between gradient and performance of the collider, characterised by the figure of merit $L_{bx} \cdot \eta /N$, which measures the ratio of beam luminosity to linac input power ($L_{bx}$ is the luminosity per bunch crossing). In general, the performance increases with decreasing gradient, as seen in Fig. \ref{fig:CLIC:Feasi1}, plotted for figure of merit and total cost against accelerating gradient, for different frequencies of RF power.
+
+where $E_{acc}$ is the average loaded gradient of the accelerating structures, L is the length of each linac and F is the ``fill factor'', which characterises the fraction of the linac occupied by accelerating structures. It is the general case for colliders such as the ILC and CLIC that in order to reduce overall construction cost, reducing L is of key importance here, without compromising the energy reach E of the collider. Minimising the value of L also allows for a compact collider that eases the siting of the accelerator complex. Hence, in order to maximise E, high fill factors and high gradients are required.
+
+The proposed value of 100MV/m for the accelerating gradient was chosen as the optimal value while finding a suitable compromise between gradient and performance of the collider, characterised by the figure of merit $L_{bx} \cdot \eta /N$, which measures the ratio of beam luminosity to linac input power ($L_{bx}$ is the luminosity per bunch crossing). In general, the performance increases with decreasing gradient, as seen in Fig. \ref{fig:CLIC:Feasi1}, plotted for figure of merit and total cost against accelerating gradient, for different frequencies of RF power.
 
 
 \begin{figure}[!htb]
@@ -53,10 +58,14 @@ Compared to the ILC, the Compact Linear Collider (CLIC) is facing more technical
     \caption{Graph of Figure of Merit and Total Cost against accelerating gradient. These graphs are used to carry out optimisation tests based on cost and luminosity for the optimal value of accelerating gradient. \cite{CLIC:Concept}}
     \label{fig:CLIC:Feasi1}
 \end{figure}
-As observed from the first graph, the figure of merit decreases as $E_{acc}$ increases, with a marked decrease in performance at f = 20 GHz. In the cost-$E_{acc}$ graph, it is observed that there is a minimum in cost at $E_{acc}$ = 120MV/m at all frequencies, with f = 12 and 15 GHz having the lowest cost. However, f = 15 GHz has a lower figure of merit than 12 GHz. The final decision made by the CLIC team was an accelerating gradient of 100MV/m and an RF frequency of 12 GHz, as a compromise between performance and cost.
-However, from the first graph, it would seem that choosing a value of $E_{acc}$ = 110 MV/m at f = 12 GHz might be a more optimal choice. While there is a decrease in performance of about 1.5 a.u. from 100 MV/m to 120 MV/m, there is only a difference in performance of about 0.4 a.u. between 100 MV/m and 110 MV/m, for a decrease in cost of about 0.03 a.u.. It is possible that 100 MV/m was chosen over 110 MV/m due to technological feasibility issues and appearances of sparks in the accelerating structure that results in breakdowns. However, the graphs would suggest a more optimal value could be chosen for a better trade-off between performance and total cost.
-With 100 MV/m and 12 GHz, and a fill factor of 78.6\%, the length of each 1.5 TeV linac was calculated to be about 21km. However, with a 110 MV/m gradient, the length of each linac could be shortened to about 19km, as calculated from the previous equation.
-The feasibility of constructing an unprecedented high accelerating gradient is currently being tested at the CERN CLIC Test Facility 3 (CTF3), whose main aim is to prove the main feasibility issues with the two-beam acceleration technology \cite{Nuclear:CTF3}. Table \ref{tab:CLIC:Feasi1} compares the CLIC nominal parameter with the current (and planned) parameters of the CTF3 facility.
+
+As observed from the first graph, the figure of merit decreases as $E_{acc}$ increases, with a marked decrease in performance at f = 20 GHz. In the cost-$E_{acc}$ graph, it is observed that there is a minimum in cost at $E_{acc}$ = 120MV/m at all frequencies, with f = 12 and 15 GHz having the lowest cost. However, f = 15 GHz has a lower figure of merit than 12 GHz. The final decision made by the CLIC team was an accelerating gradient of 100MV/m and an RF frequency of 12 GHz, as a compromise between performance and cost.
+
+However, from the first graph, it would seem that choosing a value of $E_{acc}$ = 110 MV/m at f = 12 GHz might be a more optimal choice. While there is a decrease in performance of about 1.5 a.u. from 100 MV/m to 120 MV/m, there is only a difference in performance of about 0.4 a.u. between 100 MV/m and 110 MV/m, for a decrease in cost of about 0.03 a.u.. It is possible that 100 MV/m was chosen over 110 MV/m due to technological feasibility issues and appearances of sparks in the accelerating structure that results in breakdowns. However, the graphs would suggest a more optimal value could be chosen for a better trade-off between performance and total cost.
+
+With 100 MV/m and 12 GHz, and a fill factor of 78.6\%, the length of each 1.5 TeV linac was calculated to be about 21km. However, with a 110 MV/m gradient, the length of each linac could be shortened to about 19km, as calculated from the previous equation.
+
+The feasibility of constructing an unprecedented high accelerating gradient is currently being tested at the CERN CLIC Test Facility 3 (CTF3), whose main aim is to prove the main feasibility issues with the two-beam acceleration technology \cite{Nuclear:CTF3}. Table \ref{tab:CLIC:Feasi1} compares the CLIC nominal parameter with the current (and planned) parameters of the CTF3 facility.
 
 \begin{table}[!htb]
 \makebox[\linewidth]{
@@ -87,13 +96,20 @@ Compared to the ILC, the Compact Linear Collider (CLIC) is facing more technical
     \caption{Performance of different accelerating structures (T18, TD18, T24 and TD24), scaled to the nominal breakdown rate (BDR). The CLIC allowed BDR is $3 \times 10^{-7} m^{-1}$. \cite{ICFA:BeamDynPress}}
     \label{fig:CLIC:Feasi2}
 \end{figure} %
-Figure \ref{fig:CLIC:Feasi2} shows the achieved accelerating gradients at different generations of accelerating structures (T18 and TD18 are the early designs). The T24 structure had demonstrated an unloaded accelerating field of more than 120 MV/m, while the TD24 structure, which has been equipped with damping slots (i.e. the CLIC baseline structure), demonstrated an accelerating gradient of 97 MV/m at a breakdown rate of $5 \times 10-5 m-1$. While the gradient is very close to the nominal value of 100 MV/m, the breakdown rate is still about two orders greater than the allowed breakdown rate at CLIC of $3 \times 10^{-7} m^{-1}$.
-CTF3 is currently scheduled to run till 2016 \cite{ICFA:BeamDynPress} to perform more detailed tests on the demonstrated drive beam generation and two-beam acceleration. However, a limitation to these tests is the low repetition rate due to limited shielding of the CTF3 facility, resulting in the inability to measure accelerating structures at the nominal breakdown rate. Future programs will have to seek to gain greater access to X-band power stations in order to further improve the behaviour and performance of accelerating structures.
-\paragraph{Two Beam Acceleration Scheme}
-The 100 MV/m accelerating gradient proposed for CLIC is currently beyond the reach of superconducting technology. In order to achieve the necessary energies and accelerating gradient, a two-beam acceleration scheme where the necessary radio-frequency (RF) power is extracted from a low energy drive beam in order to accelerate the main beam of electrons and positrons is being proposed \cite{AccSciTech:Wilson}. Figure \ref{fig:CLIC:Feasi3} shows the schematic layout for CLIC when operating at 3 TeV.
-In this proposed system, the main beam of electrons and positrons are accelerated to the required multi-TeV range of energies by decelerating a second parallel drive beam of electrons with a higher intensity and power density, but with a much lower energy. The RF power from the drive beam is transferred to the main beam structure via Power Extraction and Transfer Structures (PETS) \cite{CLIC:Concept}. The main beam accelerating structures, as mentioned previously, are normal-conducting structures designed to perform at 12 GHz (X-band) in order to achieve the required high acceleration gradients.
-This is a unique acceleration scheme that compared to the ILC has never been seen or operated before, let alone on an industrial scale such as the one proposed at CLIC. Hence, there are major technical hurdles to overcome with regards to the two-beam acceleration: these include the generation of the drive beam, the extraction and use of RF power from the drive beam, and the deceleration of the drive beam. \cite{CLIC:Concept}
-\begin{figure}[!htb]
+
+Figure \ref{fig:CLIC:Feasi2} shows the achieved accelerating gradients at different generations of accelerating structures (T18 and TD18 are the early designs). The T24 structure had demonstrated an unloaded accelerating field of more than 120 MV/m, while the TD24 structure, which has been equipped with damping slots (i.e. the CLIC baseline structure), demonstrated an accelerating gradient of 97 MV/m at a breakdown rate of $5 \times 10-5 m-1$. While the gradient is very close to the nominal value of 100 MV/m, the breakdown rate is still about two orders greater than the allowed breakdown rate at CLIC of $3 \times 10^{-7} m^{-1}$.
+
+CTF3 is currently scheduled to run till 2016 \cite{ICFA:BeamDynPress} to perform more detailed tests on the demonstrated drive beam generation and two-beam acceleration. However, a limitation to these tests is the low repetition rate due to limited shielding of the CTF3 facility, resulting in the inability to measure accelerating structures at the nominal breakdown rate. Future programs will have to seek to gain greater access to X-band power stations in order to further improve the behaviour and performance of accelerating structures.
+
+\paragraph{Two Beam Acceleration Scheme}
+
+The 100 MV/m accelerating gradient proposed for CLIC is currently beyond the reach of superconducting technology. In order to achieve the necessary energies and accelerating gradient, a two-beam acceleration scheme where the necessary radio-frequency (RF) power is extracted from a low energy drive beam in order to accelerate the main beam of electrons and positrons is being proposed \cite{AccSciTech:Wilson}. Figure \ref{fig:CLIC:Feasi3} shows the schematic layout for CLIC when operating at 3 TeV.
+
+In this proposed system, the main beam of electrons and positrons are accelerated to the required multi-TeV range of energies by decelerating a second parallel drive beam of electrons with a higher intensity and power density, but with a much lower energy. The RF power from the drive beam is transferred to the main beam structure via Power Extraction and Transfer Structures (PETS) \cite{CLIC:Concept}. The main beam accelerating structures, as mentioned previously, are normal-conducting structures designed to perform at 12 GHz (X-band) in order to achieve the required high acceleration gradients.
+
+This is a unique acceleration scheme that compared to the ILC has never been seen or operated before, let alone on an industrial scale such as the one proposed at CLIC. Hence, there are major technical hurdles to overcome with regards to the two-beam acceleration: these include the generation of the drive beam, the extraction and use of RF power from the drive beam, and the deceleration of the drive beam. \cite{CLIC:Concept}
+
+\begin{figure}[!htb]
     \centering
     \includegraphics[width=1\textwidth,natwidth=2022,natheight=1092]{CLIC_Feasi3.jpg}
     
@@ -116,9 +132,12 @@ Compared to the ILC, the Compact Linear Collider (CLIC) is facing more technical
 \label{tab:CLIC:Feasi2}
 \end{center}
 \end{table}
-At previous CERN facilities CTF1 and CTF2, proof of principle of the two-beam acceleration scheme had already been demonstrated at low energy and low intensity beams \cite{Nuclear:CTF3}. The energies and intensities at CTF3 are relatively higher, however it must be noted that compared to the required CLIC values (drive beam intensity of 100 A, drive beam energy of 2.75 – 2.86 GeV), the achieved values at CTF3 for drive beam intensity is of about 30 A and energies of only 100 – 200 MeV. A list of the major drive beam parameters has been included in Table \ref{tab:CLIC:Feasi2} for comparison.
-Hence, in order to better test the feasibility of this proposed two-beam acceleration scheme, the Two-Beam Test Stand (TBTS) \cite{Nuclear:CTF3} was constructed at CTF3, which is an experiment that consists of two parallel electron beam lines, simulating the CLIC two-beam layout. TBTS uses a prototype accelerating structure similar to the one that will be used in CLIC, along with an extra-long PETS to compensate for the decreased beam intensity. This is to ensure TBTS is able to investigate the effects of RF breakdowns in the accelerating structures on the beams at the same RF power level and accelerating gradient as found in CLIC \cite{Nuclear:CTF3}.
-As mentioned previously, CTF3 has been able to successfully demonstrate drive beam generation and the two-beam acceleration scheme proof of principle in the CDR period. In fact, a 145 MV/m accelerating gradient has been achieved at CTF3 in a baseline CLIC structure \cite{CLIC:Concept}.
+
+At previous CERN facilities CTF1 and CTF2, proof of principle of the two-beam acceleration scheme had already been demonstrated at low energy and low intensity beams \cite{Nuclear:CTF3}. The energies and intensities at CTF3 are relatively higher, however it must be noted that compared to the required CLIC values (drive beam intensity of 100 A, drive beam energy of 2.75 – 2.86 GeV), the achieved values at CTF3 for drive beam intensity is of about 30 A and energies of only 100 – 200 MeV. A list of the major drive beam parameters has been included in Table \ref{tab:CLIC:Feasi2} for comparison.
+
+Hence, in order to better test the feasibility of this proposed two-beam acceleration scheme, the Two-Beam Test Stand (TBTS) \cite{Nuclear:CTF3} was constructed at CTF3, which is an experiment that consists of two parallel electron beam lines, simulating the CLIC two-beam layout. TBTS uses a prototype accelerating structure similar to the one that will be used in CLIC, along with an extra-long PETS to compensate for the decreased beam intensity. This is to ensure TBTS is able to investigate the effects of RF breakdowns in the accelerating structures on the beams at the same RF power level and accelerating gradient as found in CLIC \cite{Nuclear:CTF3}.
+
+As mentioned previously, CTF3 has been able to successfully demonstrate drive beam generation and the two-beam acceleration scheme proof of principle in the CDR period. In fact, a 145 MV/m accelerating gradient has been achieved at CTF3 in a baseline CLIC structure \cite{CLIC:Concept}.
 
 \begin{figure}[!htb]
     \centering
@@ -127,10 +146,14 @@ Compared to the ILC, the Compact Linear Collider (CLIC) is facing more technical
     \caption{Graph of experimental results for two-beam acceleration gradient in the baseline CLIC structure (TD24), up to and beyond the nominal CLIC acceleration value. \cite{ICFA:BeamDynPress}}
     \label{fig:CLIC:Feasi4}
 \end{figure}
-Figure \ref{fig:CLIC:Feasi4} shows the measured gradient in the TD24 accelerating structure, up to and beyond the nominal CLIC values. However, full prototypes of the CLIC modules still remain to be tested to ensure that the previous successful demonstrations can be carried out at the larger CLIC scale. A high efficiency 1 GHz multi-beam klystron and modulator is currently planned to be tested at CERN in 2015-2016 \cite{ICFA:BeamDynPress}, which will provide a more complete system test of a CLIC linac module.
-The latest results from CTF3 have also demonstrated drive beam combination by a factor four with the nominal emittance of 150$\mu m$ in both planes. (At CTF3, a 3 GHz, 4 A beam is injected into the combiner ring, where it is stacked up to produce the required 12 GHz beam with a pulse of 280ns, which is referred to as a factor four combination.) The next and final step would be to demonstrate drive beam combination at a stable factor of eight. This is achieved by alternately injecting and bypassing 140ns segments of a 1.5 GHz linac beam pulse, which results in a train of four 140ns sub-pulses, which can be stacked up to get the required 12 GHz beam with a shorter pulse of 140ns. However, progress in achieving this factor eight combination had been hindered by unforeseen technical issues with the traveling wave tubes \cite{CLIC:Concept}.
-Future programs at CTF3 will also see an increase in testing of X-band (12 GHz) structures. Under the project title of XBOX, a second test area called XBOX2 is planned to be commissioned at the end of 2014, with XBOX3 to be commissioned by the end of 2015. This will see more than 40 such klystron structures being tested by 2017 \cite{ICFA:BeamDynPress}. The future of the CLIC project will also see a continuation of studies on power and cost optimisation, including the full CLIC module tests outlined above.
-In order to extract maximum power from the drive beam to be converted into RF power for the main beam, the drive beam requires deceleration from about 2.4 GeV to 0.24 GeV \cite{CLIC:Concept}. This poses a technical challenge due to the high beam current of 100 A and the large energy spread, hence instability and energy losses have to be minimised. This is being tested and investigated at the Test Beam Line (TBL) at CTF3.
+
+Figure \ref{fig:CLIC:Feasi4} shows the measured gradient in the TD24 accelerating structure, up to and beyond the nominal CLIC values. However, full prototypes of the CLIC modules still remain to be tested to ensure that the previous successful demonstrations can be carried out at the larger CLIC scale. A high efficiency 1 GHz multi-beam klystron and modulator is currently planned to be tested at CERN in 2015-2016 \cite{ICFA:BeamDynPress}, which will provide a more complete system test of a CLIC linac module.
+
+The latest results from CTF3 have also demonstrated drive beam combination by a factor four with the nominal emittance of 150$\mu m$ in both planes. (At CTF3, a 3 GHz, 4 A beam is injected into the combiner ring, where it is stacked up to produce the required 12 GHz beam with a pulse of 280ns, which is referred to as a factor four combination.) The next and final step would be to demonstrate drive beam combination at a stable factor of eight. This is achieved by alternately injecting and bypassing 140ns segments of a 1.5 GHz linac beam pulse, which results in a train of four 140ns sub-pulses, which can be stacked up to get the required 12 GHz beam with a shorter pulse of 140ns. However, progress in achieving this factor eight combination had been hindered by unforeseen technical issues with the traveling wave tubes \cite{CLIC:Concept}.
+
+Future programs at CTF3 will also see an increase in testing of X-band (12 GHz) structures. Under the project title of XBOX, a second test area called XBOX2 is planned to be commissioned at the end of 2014, with XBOX3 to be commissioned by the end of 2015. This will see more than 40 such klystron structures being tested by 2017 \cite{ICFA:BeamDynPress}. The future of the CLIC project will also see a continuation of studies on power and cost optimisation, including the full CLIC module tests outlined above.
+
+In order to extract maximum power from the drive beam to be converted into RF power for the main beam, the drive beam requires deceleration from about 2.4 GeV to 0.24 GeV \cite{CLIC:Concept}. This poses a technical challenge due to the high beam current of 100 A and the large energy spread, hence instability and energy losses have to be minimised. This is being tested and investigated at the Test Beam Line (TBL) at CTF3.
 
 \begin{figure}[!htb]
     \centering
@@ -138,11 +161,17 @@ Compared to the ILC, the Compact Linear Collider (CLIC) is facing more technical
     
     \caption{Graph of beam energy (factor 4 combination) at the end of the Test Beam Line (TBL), with predicted deceleration. (Coloured region represents standard deviations.) \cite{IPAC:TwoBeamAcc}}
     \label{fig:CLIC:Feasi5}
-\end{figure}As of summer 2012, there were 12 PETS in TBL, and latest results demonstrated a successful 25\% deceleration of a combined beam of factor four \cite{IPAC:TwoBeamAcc}, from 125 MeV to about 95 MeV. Predictions show that with all PETS installed, a 50\% deceleration will be achievable.
+\end{figure}
+
+As of summer 2012, there were 12 PETS in TBL, and latest results demonstrated a successful 25\% deceleration of a combined beam of factor four \cite{IPAC:TwoBeamAcc}, from 125 MeV to about 95 MeV. Predictions show that with all PETS installed, a 50\% deceleration will be achievable.
+
 Lastly, the building block of the 21km linac is the two-beam module (TBM). Currently, there have been five TBMs design with four of them built (two with no quadrupoles, one with a short quadrupole and one with a long quadrupole). Initial string tests have confirmed the feasibility and operation capability of TBMs in preserving the effective accelerating field.
-While a second generation of modules is being prepared for future tests, it must be noted that a module length of 2m (due to compact integration of module components) would mean a large number of modules required for the entire length of the linac. Future programs would require major critical assessments of the module and accelerating structure length in order to drive the total cost down \cite{CLIC:Concept}.
-\paragraph{Generation of Ultra-Low Emittance Beams}
-Besides considering the energy feasibility of CLIC, there is a need to consider the luminosity L of the beam, which is ultimately related to the beam emittance $\epsilon$. Beam emittance is defined as the average spread of particle coordinates in position and momentum phase space. The luminosity of the beam in a linear collider is given by \cite{CLIC:Concept}:
+
+While a second generation of modules is being prepared for future tests, it must be noted that a module length of 2m (due to compact integration of module components) would mean a large number of modules required for the entire length of the linac. Future programs would require major critical assessments of the module and accelerating structure length in order to drive the total cost down \cite{CLIC:Concept}.
+
+\paragraph{Generation of Ultra-Low Emittance Beams}
+
+Besides considering the energy feasibility of CLIC, there is a need to consider the luminosity L of the beam, which is ultimately related to the beam emittance $\epsilon$. Beam emittance is defined as the average spread of particle coordinates in position and momentum phase space. The luminosity of the beam in a linear collider is given by \cite{CLIC:Concept}:
 
 \begin{equation}
     L = H_D \frac{N^2}{\sigma_x \sigma_y} n_b f_r
@@ -155,8 +184,10 @@ where $N$ is the number of particles per bunch, $n_b$ is the number of bunches p
     \sigma = \sqrt{\frac{\epsilon \beta}{\gamma}}
 \end{equation}
 
-where $\beta$ is the beta function at collision point, and $\gamma$ is the beam energy normalised to the electron rest energy (0.511 MeV). (The beta function is a Twiss parameter in beam optics, related to the transverse size of the beam as well.)
-However, another factor that is of importance, which was previously mentioned, is the figure of merit $M$ (which is defined as the luminosity per wall-plug power $P_{AC}$ for a given beam energy and number of photons emitted in the collision). This is given by (at the high energy regime of 3 TeV):
+
+where $\beta$ is the beta function at collision point, and $\gamma$ is the beam energy normalised to the electron rest energy (0.511 MeV). (The beta function is a Twiss parameter in beam optics, related to the transverse size of the beam as well.)
+
+However, another factor that is of importance, which was previously mentioned, is the figure of merit $M$ (which is defined as the luminosity per wall-plug power $P_{AC}$ for a given beam energy and number of photons emitted in the collision). This is given by (at the high energy regime of 3 TeV):
 
 \begin{equation}
     M = \frac{L}{P_{ac}} \propto \eta \frac{1}{\sqrt{\sigma_z}\sqrt{\epsilon_y}}
@@ -164,8 +195,10 @@ where $N$ is the number of particles per bunch, $n_b$ is the number of bunches p
 
 
 where $P_{AC}$ is the wall-plug power and $\eta$ is the wall-plug-to-beam conversion efficiency.
-Hence, we can see that the luminosity (and ultimately the performance of the collider) is dependent on the beam emittance, which has to be minimised in order to increase beam luminosity for high performance. A beam with minimal emittance would mean the particles are confined to a smaller region in space and possess the same momentum – this would increase the probability of particle interactions at collision and hence increase luminosity.
-In order to achieve these low emittances, the main beam will be made to radiate synchrotron radiation when circulating through damping rings before entering the main beam linac \cite{CLIC:Concept}. However, the main challenges are the required emittance parameters (500nm and 5nm horizontal and vertical normalised emittance), which are unprecedentedly small.
+
+Hence, we can see that the luminosity (and ultimately the performance of the collider) is dependent on the beam emittance, which has to be minimised in order to increase beam luminosity for high performance. A beam with minimal emittance would mean the particles are confined to a smaller region in space and possess the same momentum – this would increase the probability of particle interactions at collision and hence increase luminosity.
+
+In order to achieve these low emittances, the main beam will be made to radiate synchrotron radiation when circulating through damping rings before entering the main beam linac \cite{CLIC:Concept}. However, the main challenges are the required emittance parameters (500nm and 5nm horizontal and vertical normalised emittance), which are unprecedentedly small.
 
 \begin{table}[!htb]
 \makebox[\linewidth]{
@@ -179,8 +212,10 @@ where $P_{AC}$ is the wall-plug power and $\eta$ is the wall-plug-to-beam conver
 \caption{Required parameters of the beam before injection and at extraction from the damping rings (emittance parameters). \cite{CLIC:Concept}}
 \label{tab:CLIC:Feasi3}
 \end{table}
-The feasibility of producing such low emittance beams is currently being investigated at the Accelerator Test Facility (ATF) \cite{KEK:ATF} in the High energy Accelerator Research Organisation (KEK) \cite{KEK}. The results from ATF are listed in the Table \ref{tab:CLIC:Feasi4}.
-Currently, ATF has only achieved emittances of 3800nm and 15nm in the horizontal and vertical directions, which are a factor of 7.6 and 3 higher than the required CLIC emittances at 3 TeV. Hence, emittance generation (and there CLIC beam luminosity) still poses as a major challenge – future programs aim to develop new light sources (NSLSII or MAXIV) which would hopefully make new progress in achieving CLIC-like emittances within the next few years \cite{CLIC:Concept}.
+
+The feasibility of producing such low emittance beams is currently being investigated at the Accelerator Test Facility (ATF) \cite{KEK:ATF} in the High energy Accelerator Research Organisation (KEK) \cite{KEK}. The results from ATF are listed in the Table \ref{tab:CLIC:Feasi4}.
+
+Currently, ATF has only achieved emittances of 3800nm and 15nm in the horizontal and vertical directions, which are a factor of 7.6 and 3 higher than the required CLIC emittances at 3 TeV. Hence, emittance generation (and there CLIC beam luminosity) still poses as a major challenge – future programs aim to develop new light sources (NSLSII or MAXIV) which would hopefully make new progress in achieving CLIC-like emittances within the next few years \cite{CLIC:Concept}.
 
 \begin{table}[!htb]
 \makebox[\linewidth]{
@@ -197,9 +232,18 @@ where $P_{AC}$ is the wall-plug power and $\eta$ is the wall-plug-to-beam conver
 \caption{Major parameters related to achieving ultra-low emittances of main beam in the Acceleration Test Facility, compared to the nominal parameter values for CLIC at two energy stages (500 GeV and 3 TeV). \cite{CLIC:Concept}}
 \label{tab:CLIC:Feasi4}
 \end{table}
-\paragraph{Summary}
-As outlined in the above sections, the CLIC project is still facing some critical feasibility challenges due to its novel acceleration scheme and required low beam emittance. Many of the parameters have been demonstrated and shown to be feasible. Hence, CLIC remains an attractive alternative for a next-generation multi-TeV lepton collider, capable of reaching energies beyond what the ILC could. However, as the current tests often have different beam parameters than the nominal CLIC parameter values, more research and development is required to ensure that the results achieved currently are directly applicable to a large facility such as CLIC.
-Currently, it is safe to estimate that the CLIC project is still in its project preparation phase, and a robust proposal would not only require the completion of the ongoing feasibility tests, but also a consideration of factors such as project cost and power consumption. Hence, more optimisation tests have to be carried out before a mature and realistic proposal can be put forward as a competitor to the ILC. \cite{CLIC:Concept}
+
+\paragraph{Summary}
+
+As outlined in the above sections, the CLIC project is still facing some critical feasibility challenges due to its novel acceleration scheme and required low beam emittance. Many of the parameters have been demonstrated and shown to be feasible. Hence, CLIC remains an attractive alternative for a next-generation multi-TeV lepton collider, capable of reaching energies beyond what the ILC could. However, as the current tests often have different beam parameters than the nominal CLIC parameter values, more research and development is required to ensure that the results achieved currently are directly applicable to a large facility such as CLIC.
+
+Currently, it is safe to estimate that the CLIC project is still in its project preparation phase, and a robust proposal would not only require the completion of the ongoing feasibility tests, but also a consideration of factors such as project cost and power consumption. Hence, more optimisation tests have to be carried out before a mature and realistic proposal can be put forward as a competitor to the ILC. \cite{CLIC:Concept}
 
 \subsubsection{Conclusion}
-% todo Conclusion 
+Considering the magnitude and the variety of technical hurdles that CLIC has to overcome at this 
+point, it is clear that the ILC was the better option when it came to a feasibility comparison. While 
+the ILC is not free from technical challenges, its main hurdles lie in demonstrating that the required 
+technology is viable at an industrial scale. CLIC, on the other hand, requires a previously-untested 
+acceleration scheme which includes many technical challenges that are still in the design stage at 
+this point. Given the need to maintain the momentum within the particle physics community, it 
+would seem sensible to choose the ILC has the more feasible option. 
