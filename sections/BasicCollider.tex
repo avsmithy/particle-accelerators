@@ -1,25 +1,25 @@
  \subsection{Introduction}
  
- Particle colliders are particle accelerators which collide two beams charged particles (e.g. quarks, leptons and bosons) or ionic nuclei into each other or a static target. This is achieved by accelerating the particles with electromagnetic fields to kinetic energies in the regions of giga and tera electron volts (velocities in excess of 0.999c). Well known examples are the Large Hadron Collider (LHC) at CERN and the Tevatron at Fermilab.
+ Particle colliders are particle accelerators which collide two beams of charged particles (e.g. quarks, leptons and bosons) or ionic nuclei into each other or one beam into a static target. This is achieved by accelerating the particles through electromagnetic fields to kinetic energies in the regions of giga and tera electronvolts (velocities in excess of 0.999c). Well known examples are the Large Hadron Collider (LHC) at CERN and the Tevatron at Fermilab.
  
  \subsection{Collision Physics}
  
  \subsubsection{Lepton vs. Hadron Collisions}
  
- Leptons are elementary particles, whereas hadrons are composed of quarks bound via the strong force. Collisions involving hadrons are actually interactions of the constituent quarks and are modelled as such, however the distribution of energies across the constituent quarks in unknown, so the initial energy of the two colliding particles in a collision is hard to determine. The resulting interactions of hadron-hadron are completely different from lepton-lepton; lepton collisions tend to be considerably cleaner and simpler to analyse, as they are not composite particles and we can accurately know the energies of all particles involved. \cite{CERN:ColliderPhysics}
+ Leptons are elementary particles, whereas hadrons are composed of quarks and gluons (``partons'') bound via the strong force. Collisions involving hadrons are actually interactions of the constituent partons and are modelled as such, however the distribution of energies across the constituent partons is unknown, so the initial energy of the two colliding particles in a collision is hard to determine. The resulting interactions of hadron-hadron collisions are completely different from lepton-lepton; lepton collisions are considerably cleaner and simpler to analyse, as they are not composite particles, we can accurately know the energies of all particles involved and there are no inexact QCD calculations for strong interactions. \cite{CERN:ColliderPhysics}
  
  \subsection{Terms}
  
  \subsubsection{Linear and Circular Colliders}
  
  Colliders can be broken down into two distinct categories, Linear Accelerators (linac) and Circular (ring) Accelerators.
- A linac collides two bunches of particles at a fixed point in the center of a linac. After the collision, the remaining particles can no longer be used since they are travelling in the wrong direction. A ring collider can have multiple collision points along the track (the LHC has four detectors) and after a collision, the uncollided particles continue on to be used again in another collision.  
+ A linac collides two bunches of particles at a fixed point in the center of the linac. After the collision, the remaining particles can no longer be used since they are travelling in the wrong direction. A ring collider can have multiple collision points along the track (the LHC has four detectors) and after a collision, the uncollided particles continue on to be used again in another collision.  
  
  \subsubsection{Beam Energy}
  
- Collisions are at relativistic speeds so the energy is measured in the center of mass frame.
+ Collisions take place at relativistic speeds so the energy is measured in the center\textendash of\textendash mass frame.
  
- For a fixed target, the collision energy is proportional to the root of E, whereas two beam energy is proportional to 2E and is therefore more efficient \cite{ITP:Energy}. (See \ref{higherEnergies} for additional information)
+ For a fixed target, the collision energy is proportional to $\sqrt{E}$, whereas two beam energy is proportional to $2E$ and is therefore more efficient \cite{ITP:Energy}. (See \ref{higherEnergies} for additional information)
  
  \subsubsection{Luminosity}
  
@@ -35,18 +35,7 @@
  
  When charged particles decelerate, they emit their kinetic energy as radiation, this is known as synchrotron radiation (a.k.a. braking radiation or bremsstrahlung). 
  This detracts from the kinetic energy of the particle and so can impose limits on circular colliders. 
- The amount of energy emitted is inversely proportional to the square of the path radius and proportional to the fourth power of the particle's velocity. Accelerating an electron to the same energies as a proton in a circular collider would require several orders of magnitude more energy due to these losses, hence linacs, which do not lose any energy via synchrotron radiation, are often used for light particle collisions.
- 
- Synchrotron radiation is used in research as it is the brightest source of artificial X-Rays.
- 
- The equation for synchrotron radiation is given by:
-
-\begin{equation}
-    P = \frac{
-        2 Ke^2 \gamma^4 \nu^4
-    }{
-        3 c^3 r^2
-    }\end{equation}
+ The amount of energy emitted is inversely proportional to the square of the path radius and proportional to $\nu^4$. Accelerating an electron to the same energies as a proton in a circular collider would require several orders of magnitude more energy due to these losses, hence linacs, which do not lose any energy via synchrotron radiation, are often used for light particle collisions. Synchrotron radiation is used in research as it is the brightest source of artificial X-Rays.
  
  \subsubsection{Acceleration Gradient}
  
@@ -55,10 +44,10 @@
  \subsection{Systems}
  \subsubsection{Radiofrequency Cavities}
  
- RF cavities are used to accelerate the particle beam and are typically spaced along the length of collider \cite{CERN:RFCAV}. Electromagnetic waves 
-are contained within the cavity and the resulting EM field transfers energy to passing charged particles. The cavities oscillate at a fixed frequency. A particle arriving at exactly the right time will not be subjected to any force, yet ones ahead or behind will be relatively pulled or pushed to match the ideal velocity. This causes particles to bunch into precise groups. On each pass the bunch will increase in energy.
+ RF cavities are used to accelerate the particle beam and are typically spaced along the length of collider \cite{CERN:RFCAV}. Electromagnetic (EM) waves 
+are contained within the cavity and the resulting EM field transfers energy to passing charged particles. The cavities oscillate at a fixed frequency. A particle arriving at exactly the right time will not be subject to any force, but ones ahead or behind will be relatively pulled or pushed to match the ideal velocity. This causes particles to bunch into precise groups. On each pass the bunch will increase in energy.
 
-Klystrons produce EM waves which are fed remotely along a metal waveguide to  the RF cavities. An electron beam is bunched via the same method as a RF cavity and then meets an EM wave at a time where the wave opposes the electron's motion, causing the electrons to slow down and transfer energy to the wave. Klystrons operate with a relatively low current, but voltage in the kilovolt region.
+Klystrons produce EM waves which are fed remotely along a metal waveguide to the RF cavities. An electron beam is bunched via the same method as an RF cavity and then meets an EM wave at a time where the wave opposes the electron's motion, causing the electrons to slow down and transfer energy to the wave. Klystrons operate with a relatively low current, but voltage in the kilovolt region.
  
  \subsubsection{Beam Control}
  
@@ -70,7 +59,7 @@ Klystrons produce EM waves which are fed remotely along a metal waveguide to  th
  
  Superconducting RF cavities can operate at a higher duty cycle, lower beam impedance (as the apertures can be made wider) and higher efficiency of the RF source (Klystron costs increase exponentially with output). 
  
- The financial savings made from the reduced power requirements during operation is approximately offset by the need to supercool the equipment \cite{ILC:TechnicalDesignReport}.
+ However, the financial savings made from the reduced power requirements during operation is approximately offset by the need to supercool the equipment \cite{ILC:TechnicalDesignReport}.
  
  \subsubsection{Storage Rings and Injectors}
  
@@ -84,10 +73,10 @@ Storage rings hold particles at time dilating speeds, this can be useful to stor
  
  Closest to the collision are the tracking devices, which observe the path of the particles by their interference with matter, similar to a cloud chamber. As charged particles move through the device, electrical signal are picked up and the path is reconstructed by a computer. The momentum of the particle can be deduced from its deflection in a magnetic field.
  
- Calorimeters then detect the energy of particles as they forced to deposit their energy into materials. As different particles interact more strongly with different materials (strong or electroweak), various calorimeters are stacked in layers to detect as many particles as possible.
+ Calorimeters then detect the energy of particles as they forced to deposit their energy into materials. As different particles interact more strongly with different materials (depending on which forces they're subject to), various calorimeters are stacked in layers to detect as many particles as possible.
  
-Cherenkov radiation is produced when a particle travels faster than light through a medium and the angle of the radiation is dependent upon the particle's velocity. Detectors with specific mediums can therefore detect the velocity of the particle and when combined with momentum, calculate it's mass. \cite{CERN:Detectors} Additionally, should a charged particle pass through two mediums with different electrical resistances, transition radiation is produced. This is dependent upon the energy of the particle and can help determine it's type.
+Cherenkov radiation is produced when a particle travels faster than light through a medium and the angle of the radiation is dependent upon the particle's velocity. Detectors with specific media can therefore detect the velocity of the particle and when combined with momentum, calculate its mass. \cite{CERN:Detectors} Additionally, should a charged particle pass through two media with different electrical resistances, transition radiation is produced. This is dependent upon the energy of the particle and can help determine its type.
  
- Muon detectors are the furthest out, as muons are weakly interacting and pass through the other detection layers without interacting and all other particles (except neutrinos) are likely absorbed. Muons displace the electrons from atoms in gas chambers. These free electrons are forced to move to the edge of the detectors by an electric field where they are detected.
+ Muon detectors are the furthest out, as muons are weakly interacting and pass through the other detection layers without interacting and all other particles (except neutrinos) are likely absorbed.
  
  \cite{Uni:NuclearNotes} 
