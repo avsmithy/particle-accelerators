@@ -18,6 +18,7 @@
 \usepackage{tabularx}
 \usepackage{setspace}
 \usepackage{textgreek}
+\usepackage{rotating}
 
 \usepackage[backend=bibtex]{biblatex}
 \addbibresource{References.bib}
@@ -25,8 +26,7 @@
 \graphicspath{ {img/} }
 
 \begin{document} 
-% todo use endash no preceding space
-% todo move tables to appendix
+% h use endash no preceding space
 
     \begin{titlepage}
     
@@ -144,7 +144,16 @@
  \end{section}
  
  \clearpage
- \hfuzz = 1000pt % todo reference 15 still over page
+ \hfuzz = 1000pt
  \printbibliography
+ 
+ \appendix
+ \begin{section}{Tables}
+     \label{Append:A}
+    \clearpage
+    \thispagestyle{empty}
+    \input{sections/Appendix} 
+    \clearpage
+ \end{section}
  
 \end{document}
