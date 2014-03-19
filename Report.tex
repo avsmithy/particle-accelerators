@@ -30,7 +30,7 @@
 % todo use endash no preceding space
 % todo equations, refer by label not text
 % todo figures !htb? dont cut text
-% todo work allocations
+% todo move tables to appendix
 
     \begin{titlepage}
     
@@ -61,8 +61,12 @@
  
  \clearpage
  
+ \input{sections/WorkAllocation}
+ 
+ \clearpage
+ 
  \setcounter{tocdepth}{2}
- \tableofcontents
+ \tableofcontents 
  
  \clearpage
  
@@ -75,7 +79,6 @@
  \end{section}
 
  \begin{section}{Basic Particle and Collider Physics}
-     \addtocontents{toc}{Authored By Mary and Alex}
      \input{sections/BasicCollider}
      \input{sections/BasicParticle}
  \end{section}
